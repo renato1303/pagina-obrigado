@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import { motion } from 'motion/react';
 import { 
-  Check, Briefcase
+  Check
 } from 'lucide-react';
 import { LeadData, IntegrationConfig } from '../types';
 
@@ -49,11 +49,6 @@ export default function WhatsAppDirectPage({ lead }: WhatsAppDirectPageProps) {
         </div>
 
         <div className="space-y-3 max-w-lg mx-auto">
-          <span className="inline-flex items-center gap-1.5 px-3.5 py-1 rounded-full text-[11px] font-mono font-semibold bg-[#008060]/10 text-[#008060] border border-[#008060]/20 uppercase tracking-wider">
-            <Briefcase className="w-3.5 h-3.5" />
-            Candidatura • Time Comercial
-          </span>
-          
           <h1 className="font-display font-bold text-2xl sm:text-3xl text-gray-900 tracking-tight leading-tight">
             {lead.nome ? `Obrigado pela candidatura, ${lead.nome}!` : 'Obrigado pela sua candidatura!'}
           </h1>
