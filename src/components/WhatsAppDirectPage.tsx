@@ -50,12 +50,11 @@ export default function WhatsAppDirectPage({ lead }: WhatsAppDirectPageProps) {
 
         <div className="space-y-3 max-w-lg mx-auto">
           <h1 className="font-display font-bold text-2xl sm:text-3xl text-gray-900 tracking-tight leading-tight">
-            {lead.nome ? `Obrigado pela candidatura, ${lead.nome}!` : 'Obrigado pela sua candidatura!'}
+            {lead.nome ? `Obrigado, ${lead.nome}!` : 'Obrigado!'}
           </h1>
           
           <p className="text-sm sm:text-base text-gray-600 leading-relaxed">
-            Recebemos o seu formulário para a vaga no time comercial da <strong className="text-gray-900 font-semibold">Será Cacau</strong>. 
-            Nossa equipe de recrutamento vai analisar o seu perfil e entraremos em contato <strong className="text-[#008060] font-bold">nas próximas 24h</strong> com os próximos passos do processo seletivo.
+            Nossa equipe vai analisar seu perfil e entrar em contato em até 24 horas. Fique de olho no e-mail e no WhatsApp cadastrados.
           </p>
         </div>
       </motion.div>
