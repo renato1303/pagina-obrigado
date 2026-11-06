@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import { motion } from 'motion/react';
 import { 
-  Check
+  Check, Download
 } from 'lucide-react';
 import { LeadData, IntegrationConfig } from '../types';
 
@@ -56,6 +56,18 @@ export default function WhatsAppDirectPage({ lead }: WhatsAppDirectPageProps) {
           <p className="text-sm sm:text-base text-gray-600 leading-relaxed">
             Nossa equipe vai analisar seu perfil e entrar em contato em até 24 horas. Fique de olho no e-mail e no WhatsApp cadastrados.
           </p>
+        </div>
+
+        {/* Download Terms Button */}
+        <div className="pt-2">
+          <a
+            href="/Sera_Cacau_Desafio_28_dias_Termos_de_Participacao.pdf"
+            download="Sera_Cacau_Desafio_28_dias_Termos_de_Participacao.pdf"
+            className="inline-flex items-center justify-center gap-2 px-6 py-3 bg-gray-50 hover:bg-gray-100 text-gray-800 font-sans font-semibold text-xs tracking-wider rounded-xl transition-all shadow-sm cursor-pointer border border-gray-200"
+          >
+            <Download className="w-4 h-4 text-[#008060]" />
+            <span>Baixar Termos e Condições Gerais</span>
+          </a>
         </div>
       </motion.div>
 

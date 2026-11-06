@@ -411,7 +411,7 @@ export default function App() {
       {/* Header Bar */}
       <header className="w-full max-w-4xl mx-auto z-10 pt-2 pb-4 flex items-center justify-between border-b border-gray-200/80 mb-6">
         <div className="flex items-center gap-3">
-          <span className="text-base font-bold tracking-[0.15em] uppercase text-gray-900 font-display">Será Cacau</span>
+          <img src="/logo-sera-cacau (1)-1.png" alt="Será Cacau" className="h-8 sm:h-10 object-contain" />
         </div>
       </header>
 
